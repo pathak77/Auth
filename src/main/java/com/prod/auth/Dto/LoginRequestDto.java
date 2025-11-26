@@ -1,11 +1,13 @@
 package com.prod.auth.Dto;
 
 import com.prod.auth.Entity.Authority;
-import org.springframework.stereotype.Component;
+import lombok.Builder;
+import lombok.Data;
 
 import java.util.List;
 
-@Component
+@Data
+@Builder
 public class LoginRequestDto {
 
     private String username;
