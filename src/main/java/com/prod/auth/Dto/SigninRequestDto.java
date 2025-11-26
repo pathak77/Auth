@@ -1,4 +1,11 @@
 package com.prod.auth.Dto;
 
-public class SignInRequestDto {
+import lombok.Data;
+
+@Data
+public class SigninRequestDto {
+
+    private String username;
+    private String email;
+    private String password;
 }
