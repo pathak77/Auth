@@ -33,3 +33,4 @@ security:
   jwt:
     secret-key: ${JWT.SECURITY.KEY}
     expiration-time: ${JWT.EXPIRATION.TIME}
+    app-name : "your-app"
