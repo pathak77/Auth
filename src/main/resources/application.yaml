@@ -24,3 +24,12 @@ spring:
         settings:
           trace: false
           web-allow-others: false
+
+  config:
+    import: optional:file:.env
+
+
+security:
+  jwt:
+    secret-key: ${JWT.SECURITY.KEY}
+    expiration-time: ${JWT.EXPIRATION.TIME}
